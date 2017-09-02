@@ -37,3 +37,8 @@ Table of Contents
   - As you add more terms, the increases in time as you add input diminishes
 
 -----------------
+
+## Recursion
+- A function that calls itself
+- Make the code very simple for some problems
+- Potentially large footprint with it as every time you call the function, it adds another call to the stack
