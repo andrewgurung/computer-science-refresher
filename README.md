@@ -24,3 +24,16 @@ Table of Contents
 - Map, reduce, and filter
 
 -----------------
+
+## Big O
+- The way to analyze how efficient algorithms (or code in this case) without getting too mired in the details
+- Can model how much time any function is going to take given n inputs
+- Instead of exact figure, we are concerned in the order of magnitude of the number
+- For a 3x² + x + 1, we just interested in the x²
+- One for loop = O(n)
+- Two nested for loop = O(n²)
+- No loops = O(1)
+- O(log n) if a code employs a divide-and-conquer strategy (often recursive)
+  - As you add more terms, the increases in time as you add input diminishes
+
+-----------------
