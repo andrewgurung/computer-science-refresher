@@ -1,5 +1,5 @@
 # Computer Science Refresher
-Four Semesters of Computer Science in 5 Hours
+Grokking Algorithms
 
 Author Info
 -----------
@@ -8,22 +8,34 @@ URL: http://www.andrewgurung.com/
 
 Table of Contents
 -----------------
-- Big O
+- Introduction to Algorithms
+- Selection Sort
 - Recursion
-- Sort: Bubble, insertion, and merge,
 - Quicksort
-- Median values
-- Interfaces
-- Set, map, stack, and queue
-- Array lists and linked lists
-- Binary search tree
-- AVL tree
-- Single rotation and double rotation
-- Hash table
-- Functional programming
-- Map, reduce, and filter
+- Hash Tables
+- Breadth-first Search
+- Dijkstra’s algorithm
+- Greedy algorithms
+- Dynamic programming
+- K-nearest neighbors
 
 -----------------
+
+## Introduction to Algorithms
+- An algorithm is a set of instructions for accomplishing a task
+- A binary search can reduce 4 billion steps down to 32
+- Running time is calculated in Big O notation
+
+### Binary Search
+- Algorithms that searches a **sorted** list, and returns its position. Returns `null` if not found
+- Searching through a telephone directory of 1024 people
+- Simple search may take up to 1024 guesses
+- Binary search will divide the list into half, and focuses on the probable half neglecting the other half
+  - Reduces the search list into half each time. Total steps required = log 1024 = 10
+  - log is the opposite of exponent
+  - 2^10 = 1024. Exponent = 10
+  - log 1024 = 10. Log of a value = Exponent of base. [Base is 2 for this case]
+
 
 ## Big O
 - The way to analyze how efficient algorithms (or code in this case) without getting too mired in the details
