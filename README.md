@@ -78,6 +78,16 @@ console.log(binary_search(my_list, -1)); // null
 
 -----------------
 
+## Selection Sort
+- Selection sort is a neat algorithm, but it’s not very fast
+- Selection Sort Steps:
+  - Run through the entire list
+  - Get the smallest element in each run
+  - Append it to the final sorted list
+- Big O: O(n^2)
+-----------------
+
+
 ## Recursion
 - A function that calls itself
 - Make the code very simple for some problems
