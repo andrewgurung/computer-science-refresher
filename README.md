@@ -36,6 +36,34 @@ Table of Contents
   - 2^10 = 1024. Exponent = 10
   - log 1024 = 10. Log of a value = Exponent of base. [Base is 2 for this case]
 
+### JavaScript Binary Search
+- [JSBin Practice](http://jsbin.com/sotiqafeva/7/edit?js,console)
+```
+function binary_search(list, item) {
+  let low = 0;
+  let high = list.length - 1;
+
+  while(low <= high) {
+    let mid = Math.floor((low+high)/2);
+    let guess = list[mid];
+
+    if (item === guess) {
+      return mid;
+    } else if (item < guess) {
+      high = mid - 1;
+    } else if (item > guess) {
+      low = mid + 1;
+    }
+  }
+  return null;
+}
+
+const my_list = [1, 3, 5, 7, 9];
+
+console.log(binary_search(my_list, 3)); // 1
+console.log(binary_search(my_list, -1)); // null
+```
+
 
 ## Big O
 - The way to analyze how efficient algorithms (or code in this case) without getting too mired in the details
