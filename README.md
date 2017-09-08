@@ -86,6 +86,32 @@ console.log(binary_search(my_list, -1)); // null
   - Append it to the final sorted list
 - Big O: O(n^2)
 
+- [JSBin Selection Sort](http://jsbin.com/joseradojo/6/edit?js,console)
+```
+function findSmallest(list) {
+  let smallestIndex = 0;
+  let smallest = list[0];
+  for(let i = 1; i < list.length; i++) {
+    if(list[i] < smallest) {
+      smallest = list[i];
+      smallestIndex = i;
+    }
+  }
+  return smallestIndex;
+}
+
+function selectionSort(list) {
+  const sortedList = [];
+  for(let i = 0, length = list.length; i < length; i++) {
+    let smallest = findSmallest(list);
+    // Splice will remove item
+    sortedList.push(list.splice(smallest, 1)[0]);
+  }
+  return sortedList;
+}
+console.log(selectionSort([5, 3, 6, 2, 10])); // [2, 3, 5, 6, 10]
+```
+
 ### Array
 - Array stores item continuously
 - Insertion: O(n)
