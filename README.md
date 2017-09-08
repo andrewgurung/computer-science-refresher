@@ -127,4 +127,37 @@ console.log(selectionSort([5, 3, 6, 2, 10])); // [2, 3, 5, 6, 10]
 ## Recursion
 - A function that calls itself
 - Make the code very simple for some problems
+- Every recursive function has two cases: the base case and the recursive case
+- A call stack has two operations: push and pop
+- All function calls go onto the call stack
 - Potentially large footprint with it as every time you call the function, it adds another call to the stack
+
+[JSBin Factorial](http://jsbin.com/yotoladoli/edit?js,console)
+```
+function fact(x) {
+  if (x === 1) {
+    return 1;
+  } else {
+    return x * fact(x-1);
+  }
+}
+
+console.log(fact(3)); // --> 6
+```
+
+Call Stack
+```
+fact(1)
+X = 1
+fact(2)
+X = 2
+fact(2)
+X = 3
+```
+
+Stack will pop from top (i.e last in, first out)
+```
+fact(1) => 1
+fact(2) ==> 2 * fact(1) ==> 2 * 1 ==> 2
+fact(3) ==> 3 * fact(2) ==> 3 * 2 ==> 6
+```
