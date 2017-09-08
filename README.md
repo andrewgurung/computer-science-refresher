@@ -85,6 +85,16 @@ console.log(binary_search(my_list, -1)); // null
   - Get the smallest element in each run
   - Append it to the final sorted list
 - Big O: O(n^2)
+
+### Array
+- Array stores item continuously
+- Insertion: O(n)
+- Search: O(1)
+
+### List
+- List stores item anywhere in memory linked with each other
+- Insertion: O(1)
+- Search: O(n)
 -----------------
 
 
